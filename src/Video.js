@@ -5,12 +5,8 @@ import VideoSidebar from './VideoSidebar';
 
 function Video({
     url,
-    channel,
-    description,
-    song,
-    likes,
-    messages,
-    shares
+    description
+
 }) {
     const [playing, setPlaying] = useState(false);
     const videoRef = useRef(null);
@@ -34,16 +30,8 @@ function Video({
                 ref={videoRef}
                 src={url}>
             </video>
-            {/* <VideoFooter/> */}
-            <VideoFooter
-                channel={channel}
-                description={description}
-                song={song} />
-            {/* <VideoSidebar/> */}
-            <VideoSidebar
-                likes={likes}
-                messages={messages}
-                shares={shares} />
+            <VideoFooter description={description} />
+            <VideoSidebar />
         </div>
     )
 }

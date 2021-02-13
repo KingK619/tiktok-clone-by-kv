@@ -1,34 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import Video from './Video';
-import db from './firebase';
 import './App.css';
 
 function App() {
-  const [videos, setVideos] = useState([]);
+  const [videos] = useState(
+    [ 
 
-  useEffect(() => {
-    // fires once when the componant loads and videos changes
-    db.collection('videos').onSnapshot(snapshot => {
-      setVideos((snapshot.docs.map(doc => doc.data())));
-    });
-  }, [videos]);
+          { "description" : "HBO GO now works with Chromecast ",
+            "sources" : [ "http://www.exit109.com/~dnn/clips/RW20seconds_1.mp4" ],
+           
+          },
+          { "description" : "Introducing Chromecast. The easiest way to enjoy online video",
+            "sources" : [ "https://assets.mixkit.co/videos/preview/mixkit-red-frog-on-a-log-1487-large.mp4" ],
+            
+          },
+          { "description" : "Introducing Chromecast.  ",
+            "sources" : [ "https://assets.mixkit.co/videos/preview/mixkit-cold-looking-fashion-woman-in-a-winter-environment-39879-large.mp4" ],
+            
+          }
+    
+    ]
+  );
+
+ 
 
   return (
-    //BEM
+  
     <div className="app">
-      {/* <h1>Hello Guys 🤘, Let's Build Tiktok Clone</h1> */}
+     
 
       <div class="app__videos">
-        {videos.map(({ url, channel, description, song, likes, messages, shares }) => (
+        {videos.map(({ sources, description}) => (
           <Video
-            url={url}
-            channel={channel}
+            url={sources}
             description={description}
-            song={song}
-            likes={likes}
-            messages={messages}
-            shares={shares}
-          />
+           />
         )
         )}
       </div>
@@ -38,3 +44,9 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+ 
