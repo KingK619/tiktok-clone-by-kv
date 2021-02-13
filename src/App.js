@@ -10,11 +10,11 @@ function App() {
             "sources" : [ "http://www.exit109.com/~dnn/clips/RW20seconds_1.mp4" ],
            
           },
-          { "description" : "Introducing Chromecast. The easiest way to enjoy online video",
+          { "description" : "Introducing Frog.",
             "sources" : [ "https://assets.mixkit.co/videos/preview/mixkit-red-frog-on-a-log-1487-large.mp4" ],
             
           },
-          { "description" : "Introducing Chromecast.  ",
+          { "description" : "Introducing Girl.  ",
             "sources" : [ "https://assets.mixkit.co/videos/preview/mixkit-cold-looking-fashion-woman-in-a-winter-environment-39879-large.mp4" ],
             
           }
