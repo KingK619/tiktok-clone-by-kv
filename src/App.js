@@ -5,19 +5,30 @@ import './App.css';
 function App() {
   const [videos] = useState(
     [ 
-
-          { "description" : "HBO GO now works with Chromecast ",
-            "sources" : [ "http://www.exit109.com/~dnn/clips/RW20seconds_1.mp4" ],
+          
+          { "description" : "Guess the bike model ...",
+            "sources" : [ "https://assets.mixkit.co/videos/preview/mixkit-man-traveling-fast-by-motorcycle-on-a-road-39931-large.mp4" ],
+            
+          },
+          
+          { "description" : "Look at this cutie.",
+            "sources" : [ "https://media.istockphoto.com/videos/jack-russell-begging-on-yellowflowered-ground-video-id1146454849" ],
            
           },
-          { "description" : "Introducing Frog.",
-            "sources" : [ "https://assets.mixkit.co/videos/preview/mixkit-red-frog-on-a-log-1487-large.mp4" ],
+          { "description" : "EAT-SLEEP-WORK-REPEAT!",
+            "sources" : [ "https://media.istockphoto.com/videos/young-woman-training-on-a-rooftop-enjoying-freedom-vertical-format-video-id1258720345" ],
             
           },
-          { "description" : "Introducing Girl.  ",
+          { "description" : "Introducing Girl.",
             "sources" : [ "https://assets.mixkit.co/videos/preview/mixkit-cold-looking-fashion-woman-in-a-winter-environment-39879-large.mp4" ],
             
-          }
+          },  { "description" : "Nature is beautiful... ",
+          "sources" : [ "https://assets.mixkit.co/videos/preview/mixkit-man-runs-past-ground-level-shot-32809-large.mp4 " ],
+        
+        },{ "description" : "That's how it's done.",
+        "sources" : [ "https://assets.mixkit.co/videos/preview/mixkit-very-excited-little-girl-opening-a-christmas-gift-with-her-39744-large.mp4" ],
+        
+      }
     
     ]
   );
